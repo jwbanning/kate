@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "a4347924-9bc6-44cd-9532-1eb17b56b0a0",
+		"_postman_id": "78cc19ba-ed1f-4054-a5fe-3b110184017c",
 		"name": "spacecraft ",
 		"description": "Buy or rent spacecrafts hello world",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "17126271-a4347924-9bc6-44cd-9532-1eb17b56b0a0"
+		"_uid": "17126271-78cc19ba-ed1f-4054-a5fe-3b110184017c"
 	},
 	"item": [
 		{
@@ -15,7 +15,7 @@
 					"item": [
 						{
 							"name": "Read a spacecraft",
-							"id": "33f340b9-c013-4235-b649-c2667f7644ae",
+							"id": "63b05fd5-195c-434b-83fa-b1e1ce52646e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -28,13 +28,20 @@
 									}
 								],
 								"url": {
-									"raw": "{{baseUrl}}/spacecrafts/:spacecraftId",
+									"raw": "{{baseUrl}}/spacecrafts/:spacecraftId?hello=world",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
 										"spacecrafts",
 										":spacecraftId"
+									],
+									"query": [
+										{
+											"key": "hello",
+											"value": "world",
+											"type": "text"
+										}
 									],
 									"variable": [
 										{
@@ -47,7 +54,7 @@
 							},
 							"response": [
 								{
-									"id": "6bd9aa6c-bea9-4d44-9d8d-8e6bc5944482",
+									"id": "780a2742-ed9d-4882-9d01-3efd0678095d",
 									"name": "The spacecraft corresponding to the provided `spacecraftId`",
 									"originalRequest": {
 										"method": "GET",
@@ -91,7 +98,7 @@
 									"body": "{\n  \"id\": \"<string>\",\n  \"name\": \"<string>\",\n  \"type\": \"capsule\",\n  \"description\": \"<string>\"\n}"
 								},
 								{
-									"id": "93322e23-e17e-4865-ab0a-b1405baa1b94",
+									"id": "ab438576-dc31-484d-a0a1-aca215a7f480",
 									"name": "No spacecraft found for the provided `spacecraftId`",
 									"originalRequest": {
 										"method": "GET",
@@ -135,7 +142,7 @@
 									"body": "{\n  \"message\": \"<string>\"\n}"
 								},
 								{
-									"id": "919e20f8-a207-4853-b4e8-d6b08ec6b257",
+									"id": "3d8b4c07-2e6e-49db-94ff-7f56f1ccbe56",
 									"name": "Unexpected error",
 									"originalRequest": {
 										"method": "GET",
@@ -181,10 +188,10 @@
 							]
 						}
 					],
-					"id": "4b31e94b-0180-44e2-853d-48237d6761cb"
+					"id": "a734dfe8-546a-4b38-8d44-0f9aeda1c4cd"
 				}
 			],
-			"id": "9e973f3b-2be1-4e01-86dd-34b052cea1c5"
+			"id": "d09eaa87-e00f-4298-9fa2-0eb07b9b7048"
 		}
 	],
 	"auth": {
